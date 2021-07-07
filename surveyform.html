@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;500;700&display=swap" rel="stylesheet">
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="title">Reading Habits Survey</h1>
+    <p id="description">Survey to gather information about your reading habits</p>
+  </header>
+
+  <main id="container">
+    <form id="survey-form" action="index.html" method="post">
+      <label for="name" id="name-label">Name: </label><br>
+      <input type="text" required id="name" name="name" placeholder="Enter your name here..."><br>
+      <label for="email" id="email-label">Email: </label><br>
+      <input type="email" required id="email" name="email" placeholder="Enter your email here..."><br>
+      <label for="age" id="number-label">Age: </label><br>
+      <input type="number" required min="1" max="99" id="number" name="age" placeholder="Enter your age here..."><br>
+
+      <label for="gender">Choose your gender:</label><br>
+      <select name="cars" id="dropdown"><br>
+        <option value=""></option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select><br>
+
+<section id="questions">
+      <div>
+        <h3>Are you used to reading in your free time?</h3><br>
+        <label for="everyday">
+        <input type="radio" id="everyday" name="question_1" value="everyday">
+        </label>Everyday<br>
+        <label for="once_or_twice_a_week">
+        <input type="radio" id="once_or_twice_a_week" name="question_1" value="once_or_twice_a_week">
+        </label>Once or twice a week<br>
+        <label for="hardly_ever">
+        <input type="radio" id="hardly_ever" name="question_1" value="hardly_ever">
+        </label>Hardly ever<br>
+      </div>
+      <br><br>
+      <div>
+        <h3>How many books did you read last year or so?</h3><br>
+        <label for="one_book">
+        <input type="radio" id="one_book" name="question_2" value="one_book">
+        </label>One book<br>
+        <label for="from_2_to_4_books">
+        <input type="radio" id="from_2_to_4_books" name="question_2" value="from_2_to_4_books">
+        </label>From 2 to 4 books<br>
+        <label for="more_than_ten">
+        <input type="radio" id="more_than_ten" name="question_2" value="more_than_ten">
+        </label>More than ten<br>
+      </div>
+      <br><br>
+      <div>
+        <h3>Are you reading a book right now?</h3><br>
+        <label for="yes">
+        <input type="radio" id="yes" name="question_3" value="yes">
+        </label>Yes<br>
+        <label for="no">
+        <input type="radio" id="no" name="question_3" value="no">
+        </label>No<br>
+      </div>
+      <br><br>
+</section>
+<section id="options">
+  <h3>Indicates which of the following literary genres you like: </h3><br>
+  <label for="poetry">
+  <input type="checkbox" id="poetry" name="literary_genres" value="literary_genres">
+  Poetry</label><br>
+  <label for="adventure">
+  <input type="checkbox" id="adventure" name="literary_genres" value="literary_genres">
+  Adventure</label><br>
+  <label for="science_fiction">
+  <input type="checkbox" id="science_fiction" name="literary_genres" value="literary_genres">
+  Science Fiction</label><br>
+  <label for="story">
+  <input type="checkbox" id="story" name="literary_genres" value="literary_genres">
+  Story</label><br>
+  <label for="romantic_novel">
+  <input type="checkbox" id="romantic_novel" name="literary_genres" value="literary_genres">
+  Romantic Novel</label><br>
+  <label for="biography">
+  <input type="checkbox" id="biography" name="literary_genres" value="literary_genres">
+  Biography</label><br>
+</section>
+<br><br>
+<section id="comments">
+<h3>In case you had one, who is your favorite author and which of his books you liked best? </h3><br>
+  <textarea id="comments" name="comments" rows="8" cols="40" placeholder="Tell us about him/her here..."></textarea>
+</section>
+<br>
+
+      <button type="submit" form="survey-form" id="submit" name="button">Submit</button>
+    </form>
+  </main>
+</body>
+
+</html>
